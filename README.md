@@ -44,6 +44,27 @@ Dins de la funció **main** es verifica si se selecciona adequadament aquest exe
 **Resultat de l'exercici 2:**
 Els diferents arxius mp3 i mp4 estan adjuntats en aquest repositori.
 
+```python
+# Executa l'exercici 2
+python3 P3-CarmeCorbi.py 2
+```
+## Exercici 3: Comptar les pistes en un contenidor MP4
+```python
+# Executa l'exercici 3
+python3 P3-CarmeCorbi.py 3
+```
+
+## Exercici 4: Generació de Vídeo amb subtítols integrats
+```python
+# Executa l'exercici 4
+python3 P3-CarmeCorbi.py 4
+```
+
+## Exercici 5: Fer servir l'script anterior en el script principal
+
+## Exercici 6: Creació d'histogrames YUV en un nou contenidor de vídeo
+
+
 
 
 
