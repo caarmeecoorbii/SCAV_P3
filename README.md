@@ -30,4 +30,11 @@ Aquesta sortida proporciona detalls sobre com es codifica el vídeo, incloent in
 python3 P3-CarmeCorbi.py 1
 ```
 
+## Exercici 2: Crear un nou contenidor BBB amb exportació de vídeo i àudio utilitzant FFMpeg
+El pròposit d'aquest exercici es demostrar com utilitzar FFmpeg per realitzar diverses operacions de processament de vídeo i àudio i com empaquetar-ho tot en un nou fitxer de vídeo .mp4 amb les específicacions demandes. He creat una funció nova anomenada **processar_video** per realitzar tots els passos.
+1. Tallar el vídeo a 50 segons 
+
+
+
+
 
