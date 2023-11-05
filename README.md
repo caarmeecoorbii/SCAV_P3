@@ -17,3 +17,13 @@ La funció **analitzar_macroblocs_vectors_moviment** té com a objectiu analitza
 
 Dins de la funció **main** es verifica si es selecciona adequadament aquest exercici. Primer de tot, es defineix el vídeo d'entrada que en el meu cas és el BigBuckBunny i també es defineix el nom del vídeo de sortida **sortida_exercici_1.mp4** (és el vídeo retallat). Es crida a la funció **tallar_i_analitzar_video**. Seguidament, tornem a fer una crida a la classe i li passem com a vídeo d'entrada **sortida_exercici_1.mp4** i com nom del vídeo de sortida **sortida_exercici_1_2.mp4**. Per últim, cridem la funció **analitzar_macroblocs_vectors_moviment**. 
 
+**Resultat de l'exercici 1:**
+
+
+
+```python
+# Executa l'exercici 1
+python3 P2-CarmeCorbi.py 1
+```
+
+
