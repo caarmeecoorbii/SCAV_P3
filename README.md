@@ -55,6 +55,21 @@ python3 P3-CarmeCorbi.py 3
 ```
 
 ## Exercici 4: Generació de Vídeo amb subtítols integrats
+El propòsit d'aquest exercici és crear un script que descarregui subtítols, els integri en un vídeo i produeixi una versió del vídeo amb els substítulos incrustats. Aquest nou script s'anomena **ex4.py**.  En aquest script, he creat tres funcions: descarregar_subtitols, integrar_subtitols i main. 
+
+La funció **descarregar_subtitols** utilitza la comanda **youtube-dl** per descarregar els subtítols des de la URL específica i guardar-los en un fitxer amb el nom específicat **nom_subtitols**. Especificament, utilitza les opcions **--skip-download** per evitar descarregar el vídeo en si, **--write-sub** per demanar a **youtube-dl** que escrigui els subtítols en un fitxer i **--sub-lang** per específicar l'idioma dels subtítols (en aquest cas, en castella`). 
+
+La funció **integrar_subtitols** utilitza la sgüent comanda FFMpeg **ffmpeg -i {video_entrada} -vf f"subtitles={subtitols} {video_sortida}** on -vf f"subtitles={subtitols} especifica el filtre de vídeo que s'aplicarà al vídeo. S'utilitza el filtre **subtitles** que permet incrustar els subtítols en el vídeo. 
+
+La funció **main** conté les rutes als recursos de vídeo i subtítols, i es crida a les dues funcions per realitzar el procés de descàrrega i integració dels subtítols.
+
+Per executar aquest script, importem les dues primeres funcions mencionades en el fitxer **P3-CarmeCorbi.py**. Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, es defineixen algunes variables com **url_subtitols**, **nom_subtitols**, **video_entrada** i **video_sortida**. Per últim, es criden les dues funcions **descarregar_subtitols** i **integrar_subtitols**. 
+
+**Frame d'un vídeo sense subtítols:**
+
+**Frame d'un vídeo amb els subtítols integrats:**
+
+
 ```python
 # Executa l'exercici 4
 python3 P3-CarmeCorbi.py 4
