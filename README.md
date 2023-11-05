@@ -61,8 +61,16 @@ python3 P3-CarmeCorbi.py 4
 ```
 
 ## Exercici 5: Fer servir l'script anterior en el script principal
+```python
+# Executa l'exercici 5
+python3 P3-CarmeCorbi.py 5
+```
 
 ## Exercici 6: Creació d'histogrames YUV en un nou contenidor de vídeo
+```python
+# Executa l'exercici 6
+python3 P3-CarmeCorbi.py 6
+```
 
 
 
