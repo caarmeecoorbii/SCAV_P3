@@ -65,9 +65,7 @@ La funció **main** conté les rutes als recursos de vídeo i subtítols, i es c
 
 Per executar aquest script, importem les dues primeres funcions mencionades en el fitxer **P3-CarmeCorbi.py**. Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, es defineixen algunes variables com **url_subtitols**, **nom_subtitols**, **video_entrada** i **video_sortida**. Per últim, es criden les dues funcions **descarregar_subtitols** i **integrar_subtitols**. 
 
-**Frame d'un vídeo sense subtítols:**
-
-**Frame d'un vídeo amb els subtítols integrats:**
+El vídeo resultant d'aquest exercici s'anomena **messi_amb_subtitols**.
 
 
 ```python
