@@ -42,8 +42,7 @@ El pròposit d'aquest exercici es demostrar com utilitzar FFmpeg per realitzar d
 Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, es defineix el nom del vídeo de sortida i finalment, es crida a la funció **processar_video**. 
 
 **Resultat de l'exercici 2:**
-
-![](https://github.com/caarmeecoorbii/SCAV_P3/blob/main/exercici2.png)
+Els diferents arxius mp3 i mp4 estan adjuntats en aquest repositori.
 
 
 
