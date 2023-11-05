@@ -23,7 +23,7 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 
 ```python
 # Executa l'exercici 1
-python3 P2-CarmeCorbi.py 1
+python3 P3-CarmeCorbi.py 1
 ```
 
 
