@@ -20,8 +20,7 @@ Dins de la funció **main** es verifica si es selecciona adequadament aquest exe
 **Resultat de l'exercici 1:**
 Podeu visualitzar els dos vídeos **sortida_exercici_1.mp4** i **sortida_exercici_1_2_mp4** adjunts en aquest repositori. La resposta per la terminal és la següent:
 
-
-
+![](https://github.com/caarmeecoorbii/SCAV_P3/blob/main/exercici_1_2.png)
 
 ```python
 # Executa l'exercici 1
