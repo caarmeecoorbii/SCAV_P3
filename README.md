@@ -39,8 +39,11 @@ El pròposit d'aquest exercici es demostrar com utilitzar FFmpeg per realitzar d
 4. **Exportar l'àudio amb el codec AAC**: utilitzo la comanda FFMpeg **ffmpeg -i {BigBuckBunny_50.mp4} -vn -c:a aac {BigBuckBunny_AAC.aac}** on -c:a aac indica que es fa servir el còdec AAC. L'àudio es guarda amb el nom **BigBuckBunny_AAC.acc**.
 5. **Empaquetar-ho tot en un .mp4**: utilitzo la comanda FFmpeg per combinar el vídeo tallat amb les tres pistes d'àudio extretes. La comanda és la següent: **ffmpeg -i {BigBuckBunny_50.mp4} -i {BigBuckBunny_monotrack.mp3} -i {BigBuckBunny_stereo_bitratebaix.mp3} -i {BigBuckBunny_AAC.aac} -map 0 -map 1 -map 2 -map 3 -c:v copy -c:a copy {video_sortida}** on -map 0 -map 1 -map 2 -map 3 específiquen com mapejar els fluxos d'entrada als fluxos de sortida (mapeja el vídeo d'entrada i els tres fluxos d'àudio d'entrada (1,2,3) als fluxos de sortida corresponents), -c:v copy indica que el vídeo s'ha de copiar directament del fitxer d'entrada original sense cap canvi de codec i -c:a copy indica que els àudios que s'han de copiar directament dels fitxers d'entrada originals no s'han de canviar de codec.
 
-Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, es defineix el nom del vídeo de sortida i finalment, es crida a la funció ***processar_video**. 
+Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, es defineix el nom del vídeo de sortida i finalment, es crida a la funció **processar_video**. 
 
+**Resultat de l'exercici 2:**
+
+![](https://github.com/caarmeecoorbii/SCAV_P3/blob/main/exercici2.png)
 
 
 
