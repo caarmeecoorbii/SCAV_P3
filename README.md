@@ -75,11 +75,17 @@ python3 P3-CarmeCorbi.py 5
 ## Exercici 6: Creació d'histogrames YUV en un nou contenidor de vídeo
 El propòsit d'aquest exercici és utilitzar FFMpeg per extreure l'histograma YUV d'un vídeo i crear un nou vídeo que mostri l'histograma com una pista de vídeo. He creat un nou script anomenat **ex6.py**. En aquest script, he creat dues funcions **guardar_histograma** i **guardar_histograma_personalitzat**. 
 
-La funció **guardar_histograma** té com a objectiu extreure l'hisotgrama YUV d'un vídeo utilitzant una comanda FFMpeg i guardar-lo com a un nou vídeo amb l'histograma com a pista de vídeo. La comanda FFMpeg que utilitzo és la següent **ffmpeg -i {video} -vf  histogram {sortida}** on -vf histograma aplica un filtre de vídeo per extreure l'histograma. 
+La funció **guardar_histograma** té com a objectiu extreure l'histograma YUV d'un vídeo utilitzant una comanda FFMpeg i guardar-lo com a un nou vídeo amb l'histograma com a pista de vídeo. La comanda FFMpeg que faig servir és la següent **ffmpeg -i {video} -vf  histogram {sortida}** on -vf histograma aplica un filtre de vídeo per extreure l'histograma. 
 
-La funció **mostrar_histograma_personalitzat** té com a objectiu mostrar el vídeo original amb l'histograma YUV corresponent incrustat. No he aconseguit realitzar-ho amb una comanda FFmpeg però he utilitzant la comanda FFplay per poder-ho visualitzar. La comanda FFplay és la següent: **ffplay {video} -vf split=2[a][b] [b]histogram format=yuva444p[hh] [a][hh]overlay -vf split=2[a][b] [b]histogram format=yuva444p[hh] [a][hh]overlay -vf f'scale=1280:720 setsar=1 format=yuv420p -y {sortida}** on -vf "split=2[a][b];[b]histogram,format=yuva444p[hh];[a][hh]overlay,scale=1280:720,setsar=1,format=yuv420p" especifica una sèries de filtres que s'apliquen el vídeo d'entrada (split=2[a][b] divideix el vídeo en dues parts, [b]histogram,format=yuva444p[hh] genera l'histograma a partir de la part b i ho formateixa cpm a yuva444p, [a][hh]overlay superposa l'historgama generat hh amb la part a del vídeo original i scale=1280:720,setsar=1,format=yuv420p redimensiona el vídeo, configura l'aspect ratio i el format de sortida). 
+La funció **mostrar_histograma_personalitzat** té com a objectiu mostrar el vídeo original amb l'histograma YUV corresponent incrustat. No he aconseguit realitzar-ho amb una comanda FFmpeg, però he utilitzat la comanda FFplay per poder-ho visualitzar. La comanda FFplay és la següent: **ffplay {video} -vf split=2[a][b] [b]histogram format=yuva444p[hh] [a][hh]overlay -vf split=2[a][b] [b]histogram format=yuva444p[hh] [a][hh]overlay -vf f'scale=1280:720 setsar=1 format=yuv420p -y {sortida}** on -vf "split=2[a][b];[b]histogram,format=yuva444p[hh];[a][hh]overlay,scale=1280:720,setsar=1,format=yuv420p" especifica una sèrie de filtres que s'apliquen el vídeo d'entrada (split=2[a][b] divideix el vídeo en dues parts, [b]histogram,format=yuva444p[hh] genera l'histograma a partir de la part b i ho formateixa cpm a yuva444p, [a][hh]overlay superposa l'historgama generat hh amb la part a del vídeo original i scale=1280:720,setsar=1,format=yuv420p redimensiona el vídeo, configura l'aspect ratio i el format de sortida). 
 
+Per executar aquest script, importem les dues funcions mencionades en el fitxer **P3-CarmeCorbi.py**. Dins de la funció **main** es verifica si se selecciona adequadament aquest exercici. Primer de tot, definim les rutes dels vídeos d'entrada i sortida. Finalment, cridem a les dues funcions.
 
+El resultat de la funció **guardar_histograma** és el vídeo adjuntat en el repositori anomenat **histograma.mp4**. 
+
+El resultat de la funció **mostrar_histograma_personalitzat** obra una pestanya on es pot visualitzar el vídeo. Aquí teniu la captura d'un dels frames del vídeo:
+
+![](https://github.com/caarmeecoorbii/SCAV_P3/blob/main/ex6.png)
 ```python
 # Executa l'exercici 6
 python3 P3-CarmeCorbi.py 6
