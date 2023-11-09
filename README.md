@@ -49,6 +49,7 @@ Els diferents arxius mp3 i mp4 estan adjuntats en aquest repositori.
 python3 P3-CarmeCorbi.py 2
 ```
 ## Exercici 3: Comptar les pistes en un contenidor MP4
+El propòsit d'aquest exercici és retornar el nombre de pistes donat un contenidor MP4. He creat una funció anomenada **retornar_pistes_mp4**. Aquesta funció utilitza la comanda FFMpeg **ffprobe" {video_entrada} -show_entries format=nb_streams -v 0 -of compact=p=0:nk=1** on 
 ```python
 # Executa l'exercici 3
 python3 P3-CarmeCorbi.py 3
