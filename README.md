@@ -54,7 +54,8 @@ El propòsit d'aquest exercici és retornar i mostrar el nombre de pistes donat 
 També he creat la funció **mostrar_pistes** on utilitzo una comanda FFmpeg **ffprobe {video_entrada} -print_format json -show_streams** on -print_format json específica el format de sortida com JSON per a que la informació sigui estructurada i fàcil de manejar i -show_streams indica que vull mostrar la informació sobre les pistes de vídeo. A continuació, itero sobre la llista de pistes i imprimeixo el número de pista, el tipus, el format i la seva resolució. 
 
 **Resultat de l'exercici 3:**
-![]()
+
+![](https://github.com/caarmeecoorbii/SCAV_P3/blob/main/resultat_exercici3.png)
 
 ```python
 # Executa l'exercici 3
