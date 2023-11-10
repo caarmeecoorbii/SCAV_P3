@@ -48,8 +48,14 @@ Els diferents arxius mp3 i mp4 estan adjuntats en aquest repositori.
 # Executa l'exercici 2
 python3 P3-CarmeCorbi.py 2
 ```
-## Exercici 3: Comptar les pistes en un contenidor MP4
-El propòsit d'aquest exercici és retornar el nombre de pistes donat un contenidor MP4. He creat una funció anomenada **retornar_pistes_mp4**. Aquesta funció utilitza la comanda FFMpeg **ffprobe" {video_entrada} -show_entries format=nb_streams -v 0 -of compact=p=0:nk=1** on 
+## Exercici 3: Comptar i mostrar les pistes d'un contenidor MP4
+El propòsit d'aquest exercici és retornar i mostrar el nombre de pistes donat un contenidor MP4. He creat una funció anomenada **retornar_pistes_mp4**. Aquesta funció utilitza la comanda FFMpeg **ffprobe" {video_entrada} -show_entries format=nb_streams -v 0 -of compact=p=0:nk=1** on -show_entries format=nb_streams especifica que només vull mostrar el nombre de pistes, -v 0 estableix el nivell de verbositat a 0 perquè la sortida sigui més concisa i -of compact=p=0:nk=1 especifica el format de sortida perquè sigui més fàcil extreure el nombre de pistes.
+
+També he creat la funció **mostrar_pistes** on utilitzo una comanda FFmpeg **ffprobe {video_entrada} -print_format json -show_streams** on -print_format json específica el format de sortida com JSON per a que la informació sigui estructurada i fàcil de manejar i -show_streams indica que vull mostrar la informació sobre les pistes de vídeo. A continuació, itero sobre la llista de pistes i imprimeixo el número de pista, el tipus, el format i la seva resolució. 
+
+**Resultat de l'exercici 3:**
+![]()
+
 ```python
 # Executa l'exercici 3
 python3 P3-CarmeCorbi.py 3
